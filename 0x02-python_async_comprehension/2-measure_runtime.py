@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-'''This is the solution to Task 2 module.
+'''Task 2 module solution.
 '''
 import asyncio
 import time
-from importlib import import_module
+from importlib import import_module as use
 
-async_comprehension = import_module('1-async_comprehension').async_comprehension
+
+async_comprehension = use('1-async_comprehension').async_comprehension
 
 
 async def measure_runtime() -> float:
-    ''' This function executes async_comprehension() 4 times and measures the total runtime.
+    '''This function executes async_comprehension() 4 times and measures the total runtime.
     '''
-    start_t = time.time()
+    start_times = time.time()
     await asyncio.gather(*(async_comprehension() for h in range(4)))
-    return time.time() - start_t
-
+    return time.time() - start_times
