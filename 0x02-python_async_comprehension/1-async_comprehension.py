@@ -9,7 +9,7 @@ async_generator = use('0-async_generator').async_generator
 
 
 async def async_comprehension() -> List[float]:
-    '''This function creates a list of 10 floats generated async from async_generator().
+    '''This function creates a list of 10 floats generated from async_generator().
     '''
     return [numb async for numb in async_generator()]
 
