@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
-
+'''Task 1 module solution.
 '''
-This is the solution to Task 1 module.
-'''
-
 from typing import List
 from importlib import import_module
 
