@@ -11,8 +11,6 @@ async_generator = import_module('0-async_generator').async_generator
 
 
 async def async_comprehension() -> List[float]:
-    '''
-    This function creates a list of 10 floats generated asynchronously from async_generator().
-    '''
+    """Create an asynchronous list comprehension and return the list"""
     return [k async for k in async_generator()]
 
